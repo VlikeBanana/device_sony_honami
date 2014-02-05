@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2013, Android Open Kang Project
+** Copyright 2013, AOKP
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -24,9 +24,9 @@
     <bool name="useCameraInterface">false</bool>
 
     <!-- Full path to the sysfs toggle -->
-    <string name="flashDevice">/sys/devices/qpnp-regulator-f850f000/regulator/regulator.46/pm8941-flash-f8541400-torch/mode</string>
+    <string name="flashDevice">/sys/class/misc/pm8941-flash/device/mode</string>
     <!-- Full path to the sysfs luminosity -->
-    <string name="flashDeviceLuminosity">/not/available</string>
+    <string name="flashDeviceLuminosity">/sys/class/misc/pm8941-flash/device/current1</string>
 
     <!-- Off setting -->
     <integer name="valueOff">0</integer>
@@ -34,9 +34,9 @@
     <integer name="valueOn">2</integer>
 
     <!-- Low setting -->
-    <integer name="valueLow">0000</integer>
+    <integer name="valueLow">2</integer>
     <!-- Middle setting -->
-    <integer name="valueHigh">0000</integer>
+    <integer name="valueHigh">4</integer>
     <!-- Highest setting, leave -1 if it doesn't exist -->
     <integer name="valueDeathRay">-1</integer>
 </resources>
