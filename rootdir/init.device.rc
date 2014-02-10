@@ -20,3 +20,8 @@ on boot
 
     # Vibrator
     chown system system /sys/devices/i2c-2/2-0049/intensity
+
+    #Clearpad
+    chown system system /sys/devices/virtual/input/clearpad/pen
+    chown system system /sys/devices/virtual/input/clearpad/glove
+
