@@ -25,3 +25,6 @@ on boot
     chown system system /sys/devices/virtual/input/clearpad/pen
     chown system system /sys/devices/virtual/input/clearpad/glove
 
+    #Torch
+    chown system system /sys/class/misc/pm8941-flash/device/mode
+    chmod 0666 /sys/class/misc/pm8941-flash/device/mode
