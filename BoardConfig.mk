@@ -26,7 +26,7 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/honami/include
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/honami/bluetooth
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := vu_rhine_honami_row_defconfig
+TARGET_KERNEL_CONFIG := cm_rhine_honami_row_defconfig
 SOMC_DTS_TARGET := rhine_honami_row
 
 # External apps on SD
